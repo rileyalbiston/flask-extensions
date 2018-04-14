@@ -26,13 +26,13 @@ user_manager = UserManager(db_adapter, app)
 
 @app.route('/')
 def index():
-	return '<p>Index page</p><a href="/user/sign-out">Sign Out</a>'
+	return '<p>Index page</p>'
 
 
 @app.route('/profile')
 @login_required
 def profile():
-	return '<p>Profile page</p>'
+	return '<p>Profile page</p><a href="/user/sign-out">Sign Out</a>'
 
 if __name__ == '__main__':
 	app.run(debug=True)

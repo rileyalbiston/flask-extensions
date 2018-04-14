@@ -6,23 +6,23 @@
 
 ## Inital Setup
 
-> ```mkdir flask-user```
+```>``` ```mkdir flask-user```
 
-> ```cd flask-user```
+```>``` ```cd flask-user```
 
-\flask-user> ```git init```
+```\flask-user>``` ```git init```
 
-\flask-user> ```echo # Flask Extensions > readme.md```
+```\flask-user>``` ```echo # Flask Extensions > readme.md```
 
-\flask-user> ```virtualenv venv```
+```\flask-user>``` ```virtualenv venv```
 
-\flask-user> ```venv\scripts\activate```
+```\flask-user>``` ```venv\scripts\activate```
 
-(venv) \flask-user> ```pip install flask flask-user```
+```(venv) \flask-user>``` ```pip install flask flask-user```
 
-(venv) \flask-user> ```pip freeze > requirements.txt```
+```(venv) \flask-user>``` ```pip freeze > requirements.txt```
 
-(venv) \flask-user> ```echo main program file content > app.py```
+```(venv) \flask-user>``` ```echo main program file content > app.py```
 
 Add the following to the app.py file:
 
@@ -40,7 +40,7 @@ if __name__ == '__main__':
 
 ## Run the Development Server
 
-motorcycle-app> python app.py
+```flask-user>``` ```python app.py```
 
 ```* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)```
 
@@ -66,7 +66,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 <http://127.0.0.1:5000/user/sign-in>
 
-<127.0.0.1:5000/user/sign-out>
+<http://127.0.0.1:5000/user/sign-out>
 
 
 
