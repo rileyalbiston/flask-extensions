@@ -1,8 +1,8 @@
 # Start a Basic Flask App
 
-Flask is a microframework maning it comes with minimal components which makes it super simple to setup and get started. This means adding extensions as required. 
+Flask is a microframework meaning it comes with minimal components which makes it super simple to setup and get started. Extensions are added as required. 
 
-You will need the python pip package manager to install Flask. To install Flask open a terminal and type:
+To install Flask (you will need the python pip package manager) open a terminal and type:
 
 ```
 pip install Flask
@@ -61,4 +61,6 @@ When you save the file the sever should restart. If the page doesn't load check 
 To visit the new page visit:
 
 <http://127.0.0.1:5000/page-1>
+
+Done! Setting up a basic app in Flask is that easy. Now to make it done anything more useful you'll probably need to add extensions. It is this flexibility and modularity which makes Flask easy to work with, particularly for smaller projects.
 
