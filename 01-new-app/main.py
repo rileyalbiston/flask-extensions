@@ -3,14 +3,14 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def home():
-    return "<h1>Index</h1>"
+def hello():
+    return "Hello World!"
 
 
 @app.route("/page-1")
 def about():
-    return "<h1>Page 1</h1>"
+    return "Hello Page 1"
 
 
 if __name__ == '__main__':
-	app.run(debug=True, , port=5000)
+	app.run(debug=True, port=5000)
