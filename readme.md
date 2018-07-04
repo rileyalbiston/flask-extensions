@@ -2,7 +2,7 @@
 
 Flask is a microframework for Python based on Werkzeug, Jinja 2.
 
-[Flask - Web Development One Drop at a Time]('http://flask.pocoo.org/)
+[Flask - Web Development One Drop at a Time](http://flask.pocoo.org/)
 
 [Werkzeug - The Python WSGI Utility Library ](http://werkzeug.pocoo.org/)
 
@@ -14,8 +14,9 @@ This repositry is a collection of Flask examples and turorials. Each sub-directo
 
 ## Flask Extensions 
 
-<http://flask.pocoo.org/extensions/>
+[Flask Extensions Registry](http://flask.pocoo.org/extensions/)
 
 **Extensions Covered**
 
+* Flask-SQLAlchemy <http://flask-sqlalchemy.pocoo.org/2.3/>
 * Flask-User v0.6 <https://flask-user.readthedocs.io/en/v0.6/>
