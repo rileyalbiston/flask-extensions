@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% if title %}
+		<title>Single Module | {{ title }}</title>
+	{% else %} 
+		<title>Flask Blog</title>
+	{% endif %}
+
+	<link rel = "stylesheet" type = "text/css" href ="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+	<p>About</p>
+</body>
+</html>

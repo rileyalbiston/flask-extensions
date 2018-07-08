@@ -1,9 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
+	<h1>Add Post</h1>
+	<form method="POST" action="">
+		{{ form.hidden_tag() }}
+		
+		{{ form.author.label() }}
+		{{ form.author() }}
+		<br>
+		{{ form.title.label() }}
+		{{ form.title() }}
+		<br>
+		{{ form.content.label() }}
+		{{ form.content() }}
+		<br>
+		{{ form.submit() }}
+	</form>
+
 	{% for post in posts %}
 		<h2>{{ post.title }}</h2>
 		<p>Author: {{ post.author }}</p>
-		<p>Date: {{ post.data_posted }}</p>
 		<p>{{ post.content }}</p>
 	{% endfor %}
 {% endblock content %}

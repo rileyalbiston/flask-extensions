@@ -1,0 +1,10 @@
+
+{% for i in m %}
+    <p>Owner ID: {{ i.owner_id }} - Make: {{ i.make }} </p>
+{% endfor %}
+
+{{ data }}
+
+{% for item in data %}
+    <p>{{ item[0] }} | {{ item[1] }} </p>
+{% endfor %}

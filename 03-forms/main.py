@@ -1,5 +1,5 @@
 from flask import Flask, render_template, url_for,  flash, redirect
-from forms import RegistrationForm, LoginForm
+from forms import RegistrationForm, LoginForm, PostsForm
 app = Flask(__name__)
 
 
@@ -10,22 +10,23 @@ posts = [
 	{
 		'author': 'Bob',
 		'title': 'Post 1',
-		'content': 'Nulla vitae fringilla elit. Aenean pretium tempus velit at egestas. Cras eget enim dolor.',
-		'data_posted': '02-05-2018'
+		'content': 'Nulla vitae fringilla elit. Aenean pretium tempus velit at egestas. Cras eget enim dolor.'
 	},
 	{
 		'author': 'Barry',
 		'title': 'Post 2',
-		'content': 'Nunc volutpat dolor id bibendum lacinia. In hac habitasse platea dictumst. Etiam tincidunt est eleifend, porta.',
-		'data_posted': '24-09-2018'
+		'content': 'Nunc volutpat dolor id bibendum lacinia. In hac habitasse platea dictumst. Etiam tincidunt est eleifend, porta.'
 	}
 ]
 
 
 @app.route("/")
-@app.route("/home")
+@app.route("/home", methods=['GET', 'POST'])
 def home():
-    return render_template("home.html", posts=posts)
+    form = PostsForm()
+    if form.validate_on_submit():
+        posts.append(form.data)
+    return render_template("home.html", posts=posts, form=form)
 
 
 @app.route("/page-1")
@@ -42,7 +43,7 @@ def register():
     return render_template("register.html", title="Register", form=form)
 
 
-@app.route("/login" , methods=['GET', 'POST'])
+@app.route("/login", methods=['GET', 'POST'])
 def login():
     form = LoginForm()
     if form.validate_on_submit():
